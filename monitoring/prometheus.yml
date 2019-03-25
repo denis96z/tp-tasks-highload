@@ -6,14 +6,14 @@ scrape_configs:
   - job_name: instance1
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'instance1:8080' ]
+      - targets: [ 'instance-1:8080' ]
 
   - job_name: instance2
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'instance2:8080' ]
+      - targets: [ 'instance-2:8080' ]
 
   - job_name: instance3
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: [ 'instance3:8080' ]
+      - targets: [ 'instance-3:8080' ]
